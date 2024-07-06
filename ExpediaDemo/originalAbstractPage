@@ -1,0 +1,132 @@
+package com.locators;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.pagefactory.ElementLocatorFactory;
+
+import com.expedia.init.Base;
+import com.expedia.init.Common;
+import com.expedia.init.ConfigFileReader;
+
+public abstract class AbstractPage extends Base {
+
+	/**
+	 * Initialize UserAbstractPage.
+	 * 
+	 * @param Driver
+	 */
+	public AbstractPage(WebDriver driver) {
+
+		this.driver = driver;
+		
+		PageFactory.initElements(driver, this);
+
+	}
+
+	ConfigFileReader configFileReader = new ConfigFileReader();
+	@FindBy(xpath = "//a[@aria-controls='search_form_product_selector_flights']")
+	public static WebElement flightsTab;
+	
+	@FindBy(xpath = "//button[@id='close']")
+	public static WebElement closeIcon;
+	
+	@FindBy(xpath = "//input[@id='origin_select']")
+	public static WebElement searchInput;
+	
+	@FindBy(xpath = "//input[@id='destination_select']")
+	public static WebElement destinationInput;
+	
+	
+	@FindBy(xpath = "//button[@aria-label='Going to']")
+	public static WebElement goingToField;
+	
+	@FindBy(xpath = "//ul[@class='uitk-action-list no-bullet']//li//div//span//strong[contains(.,'Indianapolis (IND - Indianapolis Intl.)')]")
+	public static WebElement firstFlight;
+	
+	@FindBy(xpath = "//ul[@class='uitk-action-list no-bullet']//li//div//span//strong[contains(.,'New York (NYC - All Airports)')]")
+	public static WebElement firstDestFlight;
+	
+	@FindBy(xpath = "//button[@id='search_button']")
+	public static WebElement searchBtn;
+	
+	@FindBy(xpath = "//button[@aria-label='Leaving from']")
+	public static WebElement leavingFromField;
+	
+	@FindBy(xpath = "//div[@id='nav-inputs']//input[@placeholder='Enter minimum rate']")
+	protected static WebElement minSellRateSendKey;
+	
+	@FindBy(xpath = "//ul[@class='uitk-tabs uitk-tabs-natural background-primary uitk-tabs-default uitk-tabs-with-border uitk-tabs-natural-center-align']")
+	protected static WebElement HEADTAB;
+	
+	@FindBy(xpath = "//div[@id='search_form_product_selector_lodging']")
+	protected static WebElement SEARCHPRODUCT;
+	
+	@FindBy(xpath = "//span[@class='uitk-tab-text'][contains(text(),'Stays')]")
+	protected static WebElement STAYSTEXTVERIFICATION;
+
+	@FindBy(xpath = "//span[@class='uitk-tab-text'][contains(text(),'Flights')]")
+	protected static WebElement FLIGHTSTEXTVERIFICATION;
+	
+	@FindBy(xpath = "//span[@class='uitk-tab-text'][contains(text(),'Cars')]")
+	protected static WebElement CARSTEXTVERIFICATION;
+	
+	@FindBy(xpath = "//span[@class='uitk-tab-text'][contains(text(),'Packages')]")
+	protected static WebElement PACKAGETEXTVERIFICATION;
+	
+	@FindBy(xpath = "//input[@id='search-box-input']")
+	protected static WebElement URL;
+	
+	@FindBy(xpath = "//button[@id='search_button']")
+	protected static WebElement SEARCH_BUTTON;
+	
+	@FindBy(xpath = "//span[@class='uitk-tab-text'][contains(text(),'Stays')]")
+	protected WebElement STAYS_TAB;
+	
+	@FindBy(xpath = "//span[@class='uitk-tab-text'][contains(text(),'Flights')]")
+	protected WebElement FLIGHT_TAB;
+	
+	@FindBy(xpath = "//span[@class='uitk-tab-text'][contains(text(),'Cars')]" )
+	protected static WebElement CARS_TAB;
+	
+	@FindBy(xpath = "//span[@class='uitk-tab-text'][contains(text(),'Packages')]")
+	protected WebElement PACKAGE_TAB;
+	
+	public String RETURN_TAB = "//span[@class='uitk-tab-text'][contains(text(),'Return')]";
+	public String ONEWAY_TAB = "//span[@class='uitk-tab-text'][contains(text(),'One-way')]";
+	public String MULTICITY_TAB = "//span[@class='uitk-tab-text'][contains(text(),'Multi-city')]";
+	public String ECONOMY_DROPDOWN = "//span[@class='uitk-pill-text'][contains(text(),'Economy')]";
+	public String PREMIUMECONOMY_FIELD = "//span[@class='uitk-menu-list-item-label'][contains(text(),'Premium economy')]";
+	public String BUISNESSCLASS_FIELD = "//span[@class='uitk-menu-list-item-label'][contains(text(),'Business class')]";
+	public String FIRSTCLASS_FIELD = "//span[@class='uitk-menu-list-item-label'][contains(text(),'First class')]";
+	public static String LEAVINGFROM_FIELD = "//button[@aria-label='Leaving from']";
+	public static String CLOSE_BTN = "//button[@id='close']";
+	public String GOINGTO_FIELD = "//button[@aria-label='Going to']";
+	public String DATEPICKER_FIELD = "//button[@data-testid='uitk-date-selector-input1-default']";
+	public String TRAVELLER_FIELD = "//button[@data-stid='open-room-picker']";
+	public String ADDPLACETOSTAY_CHECKBOX = "//p[@class='uitk-checkbox-label-content'][contains(text(),'Add a place to stay')]";
+	public String ADDACAR_CHECKBOX = "//p[@class='uitk-checkbox-label-content'][contains(text(),'Add a car')]";
+	public String SWAPING_ICON = "//button[@aria-label='Swap origin and destination values']";
+	public String MORETRAVEL_DROPDOWN = "//div[@aria-hidden='true'][contains(text(),'More travel')]";
+	public String DEALS_FIELD = "//a[@aria-label='Deals']";
+	public String GROUPSMEETINGS_FIELD = "//a[@aria-label='Groups & meetings']";
+	public String MOBILE_FIELD = "//a[@aria-label='Mobile']";
+	public String GETTHEAPP_FIELD = "//div[@class='uitk-text uitk-type-300 uitk-text-white-space-nowrap uitk-text-default-theme']";
+	public String ENGLISH_FIELD = "//button[@data-stid='button-type-picker-trigger']";
+	public String SUPPORT_FIELD = "//a[@data-stid='support-cs-link']";
+	public String TRIPS_FIELD = "//a[@data-stid='itinerary-link']";
+	public String NAVIGATION_BUTTON = "//button[@class='uitk-button uitk-button-large uitk-button-tertiary uitk-button-only-icon global-navigation-nav-button']";
+	public String SIGNIN_FIELD = "//button[@class='uitk-button uitk-button-medium uitk-button-has-text uitk-button-tertiary uitk-button-tertiary-large-icon uitk-menu-trigger global-navigation-nav-button']";
+	public String QRCODE_IMAGE = "//img[@src='https://a.travel-assets.com/mad-service/qr-code/footer_qr/27_QR_FOOTER.png']";
+	public String SEEALLDEALS_BUTTON = "//a[@class='uitk-button uitk-button-medium uitk-button-has-text uitk-button-as-link uitk-button-primary uitk-layout-flex-item-align-self-flex-start uitk-layout-flex-item uitk-layout-flex-item-flex-shrink-0']";
+
+	/**
+	 * Locators for Search Page
+	 *
+	 */
+	public String SORTBY_DROPDOWN = "//div[@class='uitk-field uitk-field-select-field has-floatedLabel-label']";
+	public String SELECTBUTTON = "//button[@stid='select-button']";
+	public String SELECT_DESTINATION_ERROR_VALIDATIONMESSAGE = "//div[@class='uitk-banner uitk-banner-error']";
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Daft automation suite" verbose="10"
+	parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Verify searchForFlights Functionality">
+		<classes>
+			<class name="com.expedia.pages.SearchPage">
+				<methods>
+					<include name="searchForFlights" />
+					<include name="searchForCars" />
+					<include name="searchForPackages" />
+					<include name="searchForStays" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

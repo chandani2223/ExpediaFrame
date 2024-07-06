@@ -1,0 +1,285 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 26 16:45:35 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>462 seconds (462407 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.expedia.pages.SearchPage.searchForFlights()'><b>searchForFlights</b><br>Test class: com.expedia.pages.SearchPage<br>Parameters: Newyork, california<br/>
+<a href="#Output-1387556178" onClick='toggleBox("Output-1387556178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1387556178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1387556178">
+<br>Step 1 : Click on flights tab.<br/>
+<br>Step 2 : Click on leaving from field.<br/>
+<br>Step 3 : Enter from location.<br/>
+<br>Message : Leaving From : Newyork<br/>
+<br>Message : Total List of City : 4<br/>
+<br>Message : Leaving From Name: New York (JFK - John F. Kennedy Intl.)
+New York, United States of America<br/>
+<br>Message : ==============================<br/>
+<br>Message : Selected Leaving From Name :
+New York (JFK - John F. Kennedy Intl.)
+New York, United States of America<br/>
+<br>Step 4 : Click on going to field<br/>
+<br>Step 5 : Enter Going To location.<br/>
+<br>Message : Going To : california<br/>
+<br>Message : ======Going To start=======<br/>
+<br>Message : Going To Name: San Francisco (SFO - San Francisco Intl.)
+California, United States of America<br/>
+<br>Message : Going To Name: Los Angeles (QLA - All Airports)
+California, United States of America<br/>
+<br>Message : ===================<br/>
+<br>Message : Selected Going To Name :
+Los Angeles (QLA - All Airports)
+California, United States of America<br/>
+<br>Step 6 : Click on DatePicker field.<br/>
+<br>Message : December 2024 / 23<br/>
+<br>Message : January 2025 / 21<br/>
+<br>Step 7 : Click on Done Dates .<br/>
+<br>Step 8 : Select the Travelers.<br/>
+<br>Step 9 : Click on Adults button.<br/>
+<br>Step 10 : Click on Children button.<br/>
+<br>Step 11 : Click on Child Age button.<br/>
+<br>Message : Selected age of child : 12<br/>
+<br>Step 12 : Click on Infants On Lap button.<br/>
+<br>Step 13 : Click on Infants Of Age button.<br/>
+<br>Message : Selected infant LapAge : 1<br/>
+<br>Step 14 : Click on Decrease Infants OnLap button.<br/>
+<br>Step 15 : Click on Infants Seat button.<br/>
+<br>Step 16 : Click on Infants Seat Age button.<br/>
+<br>Message : Selected infant SeatAge : 1<br/>
+<br>Step 17 : Click On The Travelers Done Button.<br/>
+<br>Step 18 : Click on search button.<br/>
+<font color=238E23><strong><i> PASS : searchForFlights</i></strong></font><br/>
+</div>
+</td>
+<td></td>
+<td>107</td>
+<td>com.expedia.pages.SearchPage@d9345cd</td></tr>
+<tr>
+<td title='com.expedia.pages.SearchPage.searchForPackages()'><b>searchForPackages</b><br>Test class: com.expedia.pages.SearchPage<br>Parameters: Paris, Brazil<br/>
+<a href="#Output-297137378" onClick='toggleBox("Output-297137378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-297137378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-297137378">
+<br>Step 1 : Click on Packages tab.<br/>
+<br>Step 2 : Click on Leaving From field.<br/>
+<br>Step 3 : Enter from location.<br/>
+<br>Message : Leaving From : Paris<br/>
+<br>Message : Total Leaving Location Name :5<br/>
+<br>Message : Pick Up Name :Paris (CDG - Roissy-Charles de Gaulle)
+France<br/>
+<br>Message : Pick Up Name :Paris (PAR - All Airports)
+France<br/>
+<br>Message : ===========================================<br/>
+<br>Message : You Selected Leaving Name : Paris (PAR - All Airports)
+France<br/>
+<br>Step 4 : Click on Going To field.<br/>
+<br>Step 5 : Enter to location.<br/>
+<br>Message : Leaving From : Brazil<br/>
+<br>Message : Total Going Location Name :8<br/>
+<br>Message : Going To Name :Rio de Janeiro (RIO - All Airports)
+Brazil<br/>
+<br>Message : Going To Name :Rio de Janeiro
+Rio de Janeiro State, Brazil<br/>
+<br>Message : Going To Name :Rio de Janeiro (GIG - Galeão-Antonio Carlos Jobim Intl.)
+Brazil<br/>
+<br>Message : Going To Name :Sao Paulo
+São Paulo State, Brazil<br/>
+<br>Message : Going To Name :Fortaleza
+Ceará, Brazil<br/>
+<br>Message : ===========================================<br/>
+<br>Message : You Selected Going Name : Fortaleza
+Ceará, Brazil<br/>
+<br>Step 6 : Click on DatePicker field.<br/>
+<br>Message : February 2025/28<br/>
+<br>Message : March 2025/10<br/>
+<br>Step 7 : Click on DatePicker Done field.<br/>
+<br>Step 8 : Click on Travellers field.<br/>
+<br>Step 9 : Click on Adults Increase Button.<br/>
+<br>Step 10 : Click on Children Increase Button.<br/>
+<br>Step 11 : Select Children Age.<br/>
+<br>Message : You selected age of child is : 5<br/>
+<br>Step 12 : Where will the infants sit..??<br/>
+<br>Step 13 : Click On Done.<br/>
+<br>Step 14 : Click on Search Button.<br/>
+<font color=238E23><strong><i> PASS : searchForPackages</i></strong></font><br/>
+</div>
+</td>
+<td></td>
+<td>99</td>
+<td>com.expedia.pages.SearchPage@d9345cd</td></tr>
+<tr>
+<td title='com.expedia.pages.SearchPage.searchForStays()'><b>searchForStays</b><br>Test class: com.expedia.pages.SearchPage<br>Parameters: Ahmedabad<br/>
+<a href="#Output-729787591" onClick='toggleBox("Output-729787591", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-729787591" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-729787591">
+<br>Step 1 : Click on Stays tab.<br/>
+<br>Step 2 : Click on Where To field.<br/>
+<br>Step 3 : Enter Where To Input.<br/>
+<br>Message : Stays Where Search : Ahmedabad<br/>
+<br>Message : Total List of City : 6<br/>
+<br>Message : Leaving From Name: Hyderabad
+Telangana, India<br/>
+<br>Message : Leaving From Name: Bengaluru
+Karnataka, India<br/>
+<br>Message : Leaving From Name: New Delhi
+National Capital Territory of Delhi, India<br/>
+<br>Message : Leaving From Name: Mumbai
+Maharashtra, India<br/>
+<br>Message : Leaving From Name: Dubai
+Dubai, United Arab Emirates<br/>
+<br>Message : Leaving From Name: Visakhapatnam
+Andhra Pradesh, India<br/>
+<br>Message : Desired city name for leaving from not found.<br/>
+<br>Step 4 : Click on DatePicker field.<br/>
+<br>Message : December 2024 / 23<br/>
+<br>Message : January 2025 / 21<br/>
+<br>Step 5 : Click on Done Dates .<br/>
+<br>Step 6 : Select the Travelers.<br/>
+<br>Step 7 : Click on Adults button.<br/>
+<br>Step 8 : Click on Children button.<br/>
+<br>Step 9 : Click on Child Age button.<br/>
+<br>Message : Selected age of child : 15<br/>
+<br>Step 10 : Click On The Travelers Done Button.<br/>
+<br>Step 11 : Click on search button.<br/>
+<font color=238E23><strong><i> PASS : searchForStays</i></strong></font><br/>
+</div>
+</td>
+<td></td>
+<td>80</td>
+<td>com.expedia.pages.SearchPage@d9345cd</td></tr>
+<tr>
+<td title='com.expedia.pages.SearchPage.searchForCars()'><b>searchForCars</b><br>Test class: com.expedia.pages.SearchPage<br>Parameters: Ahmedabad, Bapunagar<br/>
+<a href="#Output-1866340787" onClick='toggleBox("Output-1866340787", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1866340787" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1866340787">
+<br>Step 1 : Click on Cars tab.<br/>
+<br>Step 2 : Click on pick up field.<br/>
+<br>Step 3 : Enter PickUp location.<br/>
+<br>Message : PickUp : Ahmedabad<br/>
+<br>Message : Total PickUp Location Name :8<br/>
+<br>Message : Pick Up Name :Ahmedabad
+Gujarat, India<br/>
+<br>Message : Pick Up Name :Ahmedabad (AMD - Sardar Vallabhbhai Patel Intl.)
+India<br/>
+<br>Message : Pick Up Name :Ahmedabad Junction Station
+Ahmedabad, Gujarat, India<br/>
+<br>Message : Pick Up Name :Ahmedabad City Centre
+Ahmedabad, Gujarat, India<br/>
+<br>Message : Pick Up Name :Satellite
+Ahmedabad, Gujarat, India<br/>
+<br>Message : Pick Up Name :Paldi
+Ahmedabad, Gujarat, India<br/>
+<br>Message : Pick Up Name :Prahlad Nagar
+Ahmedabad, Gujarat, India<br/>
+<br>Message : Pick Up Name :Thaltej
+Ahmedabad, Gujarat, India<br/>
+<br>Message : ===========================================<br/>
+<br>Message : You Selected PickUp Name : Thaltej
+Ahmedabad, Gujarat, India<br/>
+<br>Step 4 : Click on Same as pick up field.<br/>
+<br>Step 5 : Enter Drop-off location.<br/>
+<br>Message : Drop-off : Bapunagar<br/>
+<br>Message : ======Drop Off start=======<br/>
+<br>Message : Drop Off Name :Balanagar
+Hyderabad, Telangana, India<br/>
+<br>Message : Drop Off Name :Baranagar
+Kolkata, West Bengal, India<br/>
+<br>Message : Drop Off Name :Barnagar
+Madhya Pradesh, India<br/>
+<br>Message : Drop Off Name :Batanagar
+Kolkata, West Bengal, India<br/>
+<br>Message : Drop Off Name :Balanagar Station
+Hyderabad, Telangana, India<br/>
+<br>Message : ==============================<br/>
+<br>Message : You Selected Drop-Off Location :[[ChromeDriver: chrome on WINDOWS (b3a7e34c7a3dffc976abd0f7ad1f17bb)] -> xpath: //ul//div//li[@class='uitk-action-list-item uitk-typeahead-result-item has-subtext uitk-action-list-item-relaxed']]<br/>
+<br>Step 6 : Click on DatePicker field.<br/>
+<br>Message : January 2025/26<br/>
+<br>Message : February 2025/20<br/>
+<br>Step 7 : Click on DatePicker Done field.<br/>
+<br>Step 8 : Click on Pick-Up Time field.<br/>
+<br>Step 9 : Click on Drop-Off Time field.<br/>
+<br>Step 10 : Click on Search Button.<br/>
+<font color=238E23><strong><i> PASS : searchForCars</i></strong></font><br/>
+</div>
+</td>
+<td></td>
+<td>162</td>
+<td>com.expedia.pages.SearchPage@d9345cd</td></tr>
+</table><p>
+</body>
+</html>
